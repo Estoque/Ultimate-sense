@@ -1,0 +1,157 @@
+<html>
+
+<head>
+
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"/>
+
+<link rel="stylesheet" href="Resources/Css/Main/Lock.css" type="text/css" media="screen" />
+
+<script type="text/javascript" charset="utf-8" src="Setup/Config.js"></script>
+
+<script type="text/javascript" charset="utf-8" src="Resources/JavaScript/Main/Main.js"></script>
+
+<script type="text/javascript" src="Resources/JavaScript/jquerry-1.7.js"></script>
+
+<script type="text/javascript">
+
+	$(document).ready(function(){
+
+		$('#forecast').hide();
+
+		$('#main').click(function(){	
+
+		    $('#forecast').fadeToggle(3000);
+
+	})
+
+});
+
+</script>
+
+</head>
+
+<body bgcolor="Transparent" onLoad="init()">
+
+<div id="main">
+
+<img id="WeatherStatic" SRC="Images/WeatherStatic/dunno.jpg"  class="stretch" /></img>
+
+
+
+
+
+
+<div id="Clock"></div>
+
+<div id="ampm"></div>
+
+<div id="WeatherInfo">
+
+  <div id="city"></div>
+
+  <div id="date"></div>
+
+  <div id="temp"></div>
+
+  <div CLASS="minmaxContainer">
+
+    <div id="lowd">min</div>
+
+    <div id="low"></div>
+
+    <div id="highd">max</div>
+
+    <div id="high"></div>
+
+  </div>
+
+  <div id="desc"></div>
+
+  <div id="Offline"></div>
+
+</div>
+
+
+<div id="forecast" class="move">
+
+<img class="meteOverlay" src="Images/Overlay/meteOverlay.png" width="640" height="960" alt="meteOverlay">
+
+<div id="Wday2">
+
+    <div id="day2"></div>
+
+    <img id="icon2" SRC="Images/klear/1.png" /></img>
+
+    <div class="minmax">
+
+      <div id="low2" class="min" >7°</div>
+
+      <div class="slash">&nbsp;|&nbsp;</div>
+
+      <div id="high2" class="max" >&nbsp;11°</div>
+
+    </div>
+
+  </div>
+
+  <div id="Wday3">
+
+    <div id="day3"></div>
+
+    <img id="icon3" SRC="Images/klear/1.png" /></img>
+
+    <div class="minmax">
+
+      <div id="low3" class="min" >7°</div>
+
+      <div class="slash">&nbsp;|&nbsp;</div>
+
+      <div id="high3" class="max" >&nbsp;11°</div>
+
+    </div>
+
+  </div>
+
+  <div id="Wday4">
+
+    <div id="day4"></div>
+
+    <img id="icon4" SRC="Images/klear/1.png" /></img>
+
+    <div class="minmax">
+
+      <div id="low4" class="min" >7°</div>
+
+      <div class="slash">&nbsp;|&nbsp;</div>
+
+      <div id="high4" class="max" >&nbsp;11°</div>
+
+    </div>
+
+  </div>
+
+  <div id="Wday5">
+
+    <div id="day5"></div>
+
+    <img id="icon5" SRC="Images/klear/1.png" /></img>
+
+    <div class="minmax">
+
+      <div id="low5" class="min" >7°</div>
+
+      <div class="slash">&nbsp;|&nbsp;</div>
+
+      <div id="high5" class="max" >&nbsp;11°</div>
+
+    </div>
+
+  </div>
+
+    <div id="lastupdate"> </div>
+
+</div>
+
+</body>
+
+</html>
